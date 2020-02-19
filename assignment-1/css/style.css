@@ -1,0 +1,123 @@
+.{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: red;
+    
+}
+.navbar-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px auto;
+    max-width: 1200px;
+}
+.navbar-list a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-list li{
+    padding: 15px;
+}
+.navbar-list a:hover{
+    color: black;
+} 
+.contact-body{
+    margin: 0px auto;
+    max-width: 1200px;
+}
+.contact-heading{
+    font-size: 45px;
+    border-bottom: solid 1px black;
+}
+.contect-information{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact{
+    background-color:rgba(204, 204, 0, 0.7) ;
+    padding: 10px 0px;
+    transform: translate(0px,-23px);
+    width: 202px;    
+}
+.contact-box{
+    color: white;
+    background-color:rgb(204, 204, 0);
+    transform: translate(-0px,-28px);
+    width: 182px;
+    padding: 10px; 
+}
+.contact-box a{
+    color: white;   
+}
+.contact-discription{
+    width: 70%;
+}
+.contact-discription-paragraph{
+    margin: unset;
+}
+.contact-discription-form{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-discription-form-textfield{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 55%;
+    height: 285px;
+}
+.submitted-text-feild{
+    border-radius: 5px;
+    width: 95%;
+    padding: 10px;
+    margin: 30px 0px; 
+    border-color: rgb(204, 204, 0);   
+}
+.text-feild{
+    border-radius: 5px;
+    padding: 10px;
+}
+.submit-button{
+    border-radius: 5px;
+    width: 20%;
+    align-self: flex-end;
+    background-color: white;
+    padding: 7px;
+}
+.contact-discription-form-unit{
+    width: 40%;   
+}
+.contact-discription-form-title{
+    margin: 10px 5px;
+    font-size: 30px;
+}
+.contact-discription-form-checkbox{
+    background-color: gray;
+    padding: 10px
+}
+.form-checkbox{
+    padding: 10px;
+}
+@media only screen and (max-width: 600px){
+.navbar{
+    width: 100%;
+}
+.contect-information{
+    flex-direction: column;
+}
+.contact-imagebox{
+    align-self: center;
+}
+.contact-discription{
+    width: unset;
+}
+.submit-button{
+    width: unset;
+    
+}
+}
+
+
