@@ -40,14 +40,17 @@
     background-color:rgba(204, 204, 0, 0.7) ;
     padding: 10px 0px;
     transform: translate(0px,-23px);
-    width: 202px;    
+    /* width: 202px;     */
 }
 .contact-box{
     color: white;
     background-color:rgb(204, 204, 0);
     transform: translate(-0px,-28px);
-    width: 182px;
+    /* width: 182px; */
     padding: 10px; 
+}
+.contact-box ul{
+    list-style-type: none;
 }
 .contact-box a{
     color: white;   
