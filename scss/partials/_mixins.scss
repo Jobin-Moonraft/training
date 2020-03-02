@@ -8,7 +8,7 @@
     color: $color;
     font-weight: bold;
 
-    @if($fs>= 10 && $fs <= 50) {
+    @if($fs>= 10 and $fs <= 50) {
         font-size: #{$fs/2}$px;
     }
     @else {

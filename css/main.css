@@ -1,35 +1,40 @@
-.test, .hello {
+.test, .button .hello {
   background-color: purple; }
+
+body {
+  background-color: red; }
 
 .heading {
   color: green;
   font-weight: bold;
   font-size: 25px; }
-  .heading.test, .heading.hello {
+  .heading.test, .button .heading.hello {
     color: blue;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 100px;
     background-color: transparent; }
 
-.hello {
-  border: 1px solid red;
-  height: 50px;
-  width: 50px; }
-  .hello.bx1 {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%; }
-  .hello.bx2 {
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px; }
-  .hello.bx3 {
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; }
+.button {
+  display: flex; }
+  .button .hello {
+    border: 1px solid red;
+    height: 50px;
+    width: 50px; }
+    .button .hello.bx1 {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%; }
+    .button .hello.bx2 {
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px; }
+    .button .hello.bx3 {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px; }

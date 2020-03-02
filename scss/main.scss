@@ -2,6 +2,7 @@
 @import '../scss/partials/mixins';
 
 body {
+    background-color: red;
 }
 
 .heading {
@@ -13,22 +14,28 @@ body {
     }
 }
 
-.hello {
-    border: 1px solid red;
-    height: 50px;
-    width: 50px;
+.button{
+    display: flex;
 
-    @extend .test;
+    .hello {
+        border: 1px solid red;
+        height: 50px;
+        width: 50px;
+        
 
-    &.bx1 {
-        @include border-radius(50%);
-    }
+        @extend .test;
 
-    &.bx2 {
-        @include border-radius(20px);
-    }
+        &.bx1 {
+            @include border-radius(50%);
 
-    &.bx3 {
-        @include border-radius(10px);
+        }
+
+        &.bx2 {
+            @include border-radius(20px);
+        }
+
+        &.bx3 {
+            @include border-radius(10px);
+        }
     }
 }
