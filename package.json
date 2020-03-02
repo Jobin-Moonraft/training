@@ -1,0 +1,23 @@
+{
+  "name": "sass-training",
+  "version": "1.0.0",
+  "description": "This repo is for assignment purpose only.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jobin-Moonraft/training.git"
+  },
+  "author": "Jobin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jobin-Moonraft/training/issues"
+  },
+  "homepage": "https://github.com/Jobin-Moonraft/training#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

@@ -1,0 +1,35 @@
+.test, .hello {
+  background-color: purple; }
+
+.heading {
+  color: green;
+  font-weight: bold;
+  font-size: 25px; }
+  .heading.test, .heading.hello {
+    color: blue;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: transparent; }
+
+.hello {
+  border: 1px solid red;
+  height: 50px;
+  width: 50px; }
+  .hello.bx1 {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; }
+  .hello.bx2 {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; }
+  .hello.bx3 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; }

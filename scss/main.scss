@@ -1,0 +1,34 @@
+@import '../scss/partials/variables';
+@import '../scss/partials/mixins';
+
+body {
+}
+
+.heading {
+    @include heading();
+
+    &.test {
+        @include heading($color: blue, $fs: 70);
+        background-color: transparent;
+    }
+}
+
+.hello {
+    border: 1px solid red;
+    height: 50px;
+    width: 50px;
+
+    @extend .test;
+
+    &.bx1 {
+        @include border-radius(50%);
+    }
+
+    &.bx2 {
+        @include border-radius(20px);
+    }
+
+    &.bx3 {
+        @include border-radius(10px);
+    }
+}
