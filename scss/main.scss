@@ -1,41 +1,36 @@
+@import '../scss/partials/reset';
 @import '../scss/partials/variables';
 @import '../scss/partials/mixins';
+@import '../scss/partials/header';
+@import '../scss/partials/footer';
+@import '../scss/partials/sidenav';
+@import '../scss/partials/contentarea';
 
-body {
-    background-color: red;
+p{
+    font-weight: bold;
 }
-
-.heading {
-    @include heading();
-
-    &.test {
-        @include heading($color: blue, $fs: 70);
-        background-color: transparent;
-    }
+.page-header{
+    @include contain-heigth($ch: 100px);
+    @include page-background-color($pc: red);
 }
-
-.button{
+.body-container{
     display: flex;
 
-    .hello {
-        border: 1px solid red;
-        height: 50px;
-        width: 50px;
-        
-
-        @extend .test;
-
-        &.bx1 {
-            @include border-radius(50%);
-
-        }
-
-        &.bx2 {
-            @include border-radius(20px);
-        }
-
-        &.bx3 {
-            @include border-radius(10px);
-        }
-    }
 }
+.side-navigation{
+    
+    @include contain-width($cw: 275px);
+    @include page-background-color($pc: $color4);
+    
+}
+.content-area{
+    
+    @include contain-width($cw: 100%);
+    @include page-background-color($pc: $color3);
+    
+}
+.page-footer{
+    @include contain-heigth($ch: 100px);
+    @include page-background-color($pc: $color1);
+}
+

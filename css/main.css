@@ -1,40 +1,42 @@
-.test, .button .hello {
-  background-color: purple; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-body {
+.body-container .side-navigation {
+  overflow-y: scroll; }
+
+.body-container .content-area {
+  overflow-y: scroll; }
+
+p {
+  font-weight: bold; }
+
+.page-header {
+  height: 100px;
   background-color: red; }
 
-.heading {
-  color: green;
-  font-weight: bold;
-  font-size: 25px; }
-  .heading.test, .button .heading.hello {
-    color: blue;
-    font-weight: bold;
-    font-size: 100px;
-    background-color: transparent; }
-
-.button {
+.body-container {
   display: flex; }
-  .button .hello {
-    border: 1px solid red;
-    height: 50px;
-    width: 50px; }
-    .button .hello.bx1 {
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%; }
-    .button .hello.bx2 {
-      border-radius: 20px;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-      -o-border-radius: 20px; }
-    .button .hello.bx3 {
-      border-radius: 10px;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -ms-border-radius: 10px;
-      -o-border-radius: 10px; }
+
+.side-navigation {
+  width: 275px;
+  background-color: rgba(255, 212, 51, 0.4); }
+
+.content-area {
+  width: 100%;
+  background-color: green; }
+
+.page-footer {
+  height: 100px;
+  background-color: purple; }
