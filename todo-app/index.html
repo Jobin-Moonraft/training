@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Add the Task</h2>
+        <div class="tab-tab1">           
+            First Name :<input  type="text" id="name" placeholder="Task Name"><br>
+            Priority :<select id="priority">
+                <option>low</option>
+                <option>medium</option>
+                <option>High</option>                
+              </select><br>
+            Date :<input type="date" id="date" placeholder="Date"><br>
+
+        <div>
+            <button onclick="addHtmlTableRow();">Add</button>
+            <button onclick="editSelectedRow();">Edit</button>
+            <button onclick="deleteSelectedRow();">Delete</button>
+        </div>
+        </div>
+        <h2>Task List</h2>
+        <div class="tab-tab2">            
+            <table class="table" id="table">
+                <tr>
+                    <th>Task Name</th>
+                    <th>Priority</th>
+                    <th>Date</th>                    
+                </tr>
+                <tr>
+                    <td>Task Name1</td>
+                    <td>low</td>
+                    <td>2020-03-21</td>                    
+                </tr>
+                <tr>
+                    <td>Task Name2</td>
+                    <td>low</td>
+                    <td>2020-03-22</td>                    
+                </tr>
+                <tr>
+                    <td>Task Name3</td>
+                    <td>low</td>
+                    <td>2020-03-24</td>                    
+                </tr>
+            </table>
+        </div>
+     
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
