@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-app</title>
+    <link href="../scss/main.scss" >
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            
+                <h1 class="page-title">TODO APP</h1>
+                <button class="button" onclick="createTodo()" >Create TODO List</button> 
+            
+        </div>
+        <div class="input" id="input">
+            <label>Task Name: </label><br>
+            <input class="text"type ="text" placeholder="task name" id="todo-input"><br>
+
+            <label>Task Date:</label><br>
+             <input class="text"type ="date" placeholder="task date"id="todo-date"><br>
+
+            <label>Task Time:</label><br>
+             <input class="text"type ="time" placeholder="task time"id="todo-time"><br>
+            
+            <label>Proprety:</label><br>
+            <form name="forms"  onsubmit="return validation()">
+            <input type="radio" class="todo-priority" id="todo-priority" name="priority" value="Low">
+            <label for="Low">Low</label>
+            
+            <input type="radio" class="todo-priority" id="todo-priority" name="priority" value="Medium">
+            <label for="Low">Medium</label>
+           
+            <input type="radio" class="todo-priority" id="todo-priority" name="priority" value="High">
+            <label for="Low">high</label>
+            <br>
+            <p id="message"></p>
+        </form> 
+        
+            <button type="button" id="add-btn" >Add todo list</button>
+        </div> 
+        <div class="todo-list" id="list">
+            <h3></h3>
+                
+        </div>      
+     
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

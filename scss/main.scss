@@ -1,0 +1,100 @@
+@import '../scss/partials/reset';
+@import '../scss/partials/variables';
+@import '../scss/partials/mixins';
+@import '../scss/partials/header';
+@import '../scss/partials/footer';
+@import '../scss/partials/sidenav';
+@import '../scss/partials/contentarea';
+.button{
+    border-radius: 50px;
+    width: 400px;
+    padding: 6px;
+    font-size: 30px;
+    background-color:rgba(3, 219, 252,0.6);
+
+}
+.input{
+    display: none;
+    border: 1px solid;
+    margin: 15px 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.hidden{
+    display: none;
+} 
+.todo-list{
+    
+    padding: 10px;
+    font-size: 20px;
+    
+   
+}
+.item{
+    display: flex;
+    background-color: pink;
+   
+}
+
+.item-text, .item-date, .item-time, .item-priority{
+  padding: 15px;
+  background-color: pink;
+
+} 
+
+.action-btns{
+    padding: 13px;
+}
+h3{
+    display: none;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text, .edit-input1,.edit-input2,.edit-input3{
+    width: 270px;
+    margin: 10px;
+    padding: 10px;
+    border-style: none;
+    border-bottom: 1px solid;
+    font-size: 17px;
+}
+#add-btn{
+    border-radius: 50px;
+    width: 250px;
+    padding: 6px;
+    font-size: 20px;
+    background-color:rgba(3, 219, 252,0.6);
+}
+
+// p{
+//     font-weight: bold;
+// }
+// .page-header{
+//     @include contain-heigth($ch: 100px);
+//     @include page-background-color($pc: red);
+// }
+// .body-container{
+//     display: flex;
+
+// }
+// .side-navigation{
+    
+//     @include contain-width($cw: 275px);
+//     @include page-background-color($pc: $color4);
+    
+// }
+// .content-area{
+    
+//     @include contain-width($cw: 100%);
+//     @include page-background-color($pc: $color3);
+    
+// }
+// .page-footer{
+//     @include contain-heigth($ch: 100px);
+//     @include page-background-color($pc: $color1);
+// }
+
