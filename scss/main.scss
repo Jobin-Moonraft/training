@@ -1,10 +1,8 @@
 @import '../scss/partials/reset';
 @import '../scss/partials/variables';
 @import '../scss/partials/mixins';
-@import '../scss/partials/header';
-@import '../scss/partials/footer';
-@import '../scss/partials/sidenav';
-@import '../scss/partials/contentarea';
+@import '../scss/partials/todoList';
+@import '../scss/partials/todoForm';
 .button{
     border-radius: 50px;
     width: 400px;
@@ -13,39 +11,8 @@
     background-color:rgba(3, 219, 252,0.6);
 
 }
-.input{
-    display: none;
-    border: 1px solid;
-    margin: 15px 50px;
-    text-align: center;
-    padding: 20px;
-}
 
-.hidden{
-    display: none;
-} 
-.todo-list{
-    
-    padding: 10px;
-    font-size: 20px;
-    
-   
-}
-.item{
-    display: flex;
-    background-color: pink;
-   
-}
 
-.item-text, .item-date, .item-time, .item-priority{
-  padding: 15px;
-  background-color: pink;
-
-} 
-
-.action-btns{
-    padding: 13px;
-}
 h3{
     display: none;
 }
