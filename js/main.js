@@ -1,6 +1,9 @@
 function createTodo(){
     document.getElementById("input").style.display = "inline-block";
 }
+function hideTodo(){
+    document.getElementById("input").style.display = "none";
+}
 
 
 function checkEmptyInput(){               
@@ -8,22 +11,24 @@ function checkEmptyInput(){
     var isEmpty = false,
     todo_input = document.getElementById("todo-input").value,
     todo_date = document.getElementById("todo-date").value,
-    todo_time = document.getElementById("todo-time").value;                        
+    todo_time = document.getElementById("todo-time").value;
+                            
                     
    if(todo_input===""){
-        alert("Task name cannot be empty");
+    document.getElementById("text-message").innerHTML = "* Plase Enter Task Name";
         isEmpty=ture;
     }
     else if(todo_date===""){
-        alert("Date cannot be empty");
+        document.getElementById("date-message").innerHTML = "* Plase Enter Date";
         isEmpty=ture;
     }
     else if(todo_time===""){
-        alert("Time cannot be empty");
+        document.getElementById("time-message").innerHTML = "* Plase Enter Time";
         isEmpty=ture;
     }
     
     return isEmpty;
+   
        
 }
 
@@ -36,10 +41,7 @@ function checkEmptyInput(){
      }
      document.getElementById("message").innerHTML = "* Plase Select anyone";
      return false;
- }
- 
-
-       
+ }   
 
 var add_todo_btn = document.getElementById("add-btn");
 var todo_input = document.getElementById("todo-input");
@@ -52,7 +54,7 @@ var  priority = document.querySelector("h3");
 add_todo_btn.addEventListener('click', function(){
     if(!checkEmptyInput()) {
     if(validation()){
-        
+        hideTodo()                       
     var input = todo_input.value;
     var date = todo_date.value;
     var time = todo_time.value;  
@@ -94,7 +96,7 @@ add_todo_btn.addEventListener('click', function(){
     edit_input1.value= input;
     edit_input2.value= date;
     edit_input3.value= time;
-     
+       
     var edit_input_btn = document.createElement('BUTTON');
     edit_input_btn.textContent = 'UPDATE';
     edit_input_btn.classList.add('action-btn');
@@ -102,7 +104,9 @@ add_todo_btn.addEventListener('click', function(){
     edit_input_btn.classList.add("hidden");    
     edit_input1.type ='text';
     edit_input2.type ='date';
-    edit_input3.type ='time';     
+    edit_input3.type ='time';
+     
+       
 
     var action_btns = document.createElement('DIV');
     action_btns.classList.add('action-btns'); 

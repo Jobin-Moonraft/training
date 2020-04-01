@@ -1,41 +1,44 @@
 @import '../scss/partials/reset';
 @import '../scss/partials/variables';
 @import '../scss/partials/mixins';
-@import '../scss/partials/todoList';
-@import '../scss/partials/todoForm';
+@import '../scss/partials/todo';
+@import '../scss/partials/todolist';
+
+.app{
+    text-align: center;
+}
+.header{
+    .page-title{
+    font-size: 40px;
+    padding: 15px;
+    font-weight: bold;
+    @include content-color($cc :$color5)
+}
+}
 .button{
     border-radius: 50px;
     width: 400px;
     padding: 6px;
     font-size: 30px;
-    background-color:rgba(3, 219, 252,0.6);
-
+    @include page-background-color($bc : $color5);
 }
-
 
 h3{
     display: none;
 }
-label{
-    font-weight: bold;
-    font-size: 20px;
-}
 
 .text, .edit-input1,.edit-input2,.edit-input3{
-    width: 270px;
+    @include container-width($cw: 270px);
     margin: 10px;
     padding: 10px;
     border-style: none;
     border-bottom: 1px solid;
     font-size: 17px;
+    
 }
-#add-btn{
-    border-radius: 50px;
-    width: 250px;
-    padding: 6px;
-    font-size: 20px;
-    background-color:rgba(3, 219, 252,0.6);
-}
+
+
+
 
 // p{
 //     font-weight: bold;

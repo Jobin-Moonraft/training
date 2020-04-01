@@ -1,13 +1,16 @@
-@mixin contain-width($cw) {  
+@mixin container-width($cw) {  
     width: $cw;
     
 }
-@mixin contain-heigth($ch) {  
+@mixin container-heigth($ch) {  
      height: $ch;
 }
     
-@mixin page-background-color($pc) {
-    background-color: $pc;
+@mixin page-background-color($bc) {
+    background-color: $bc;
+}
+@mixin content-color($cc){
+    color: $cc;
 }
 
 // @mixin test() {

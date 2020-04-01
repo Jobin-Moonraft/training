@@ -13,30 +13,87 @@ summary, time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-.body-container .side-navigation {
-  overflow-y: scroll; }
+.input {
+  display: none;
+  border: 1px solid;
+  margin: 15px 50px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px; }
 
-.body-container .content-area {
-  overflow-y: scroll; }
+label {
+  font-weight: bold;
+  font-size: 20px; }
+
+form {
+  padding: 5px 0px; }
+
+form label {
+  font-size: 15px; }
 
 p {
-  font-weight: bold; }
+  color: red;
+  font-size: 13px;
+  text-align: left;
+  padding: 2px 0px; }
 
-.page-header {
-  height: 100px;
-  background-color: red; }
+#add-btn {
+  border-radius: 50px;
+  width: 250px;
+  padding: 6px;
+  font-size: 20px;
+  background-color: rgba(3, 219, 252, 0.6); }
 
-.body-container {
-  display: flex; }
+.input {
+  display: none;
+  border: 1px solid;
+  margin: 15px 50px;
+  text-align: center;
+  padding: 20px; }
 
-.side-navigation {
-  width: 275px;
+.hidden {
+  display: none; }
+
+.todo-list {
+  padding: 10px;
+  font-size: 20px; }
+
+.item {
+  display: flex;
   background-color: rgba(255, 212, 51, 0.4); }
 
-.content-area {
-  width: 100%;
-  background-color: green; }
+.item-text, .item-date, .item-time, .item-priority {
+  padding: 15px; }
 
-.page-footer {
-  height: 100px;
-  background-color: purple; }
+.edit-input1, .edit-input2, .edit-input3 {
+  background-color: rgba(255, 212, 51, 0.4); }
+
+.action-btns {
+  padding: 13px; }
+
+.app {
+  text-align: center; }
+
+.header .page-title {
+  font-size: 40px;
+  padding: 15px;
+  font-weight: bold;
+  color: rgba(3, 219, 252, 0.6); }
+
+.button {
+  border-radius: 50px;
+  width: 400px;
+  padding: 6px;
+  font-size: 30px;
+  background-color: rgba(3, 219, 252, 0.6); }
+
+h3 {
+  display: none; }
+
+.text, .edit-input1, .edit-input2, .edit-input3 {
+  width: 270px;
+  margin: 10px;
+  padding: 10px;
+  border-style: none;
+  border-bottom: 1px solid;
+  font-size: 17px; }
