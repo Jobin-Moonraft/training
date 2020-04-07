@@ -29,7 +29,6 @@ h3{
 
 .text, .edit-input1,.edit-input2,.edit-input3{
     @include container-width($cw: 270px);
-    margin: 10px;
     padding: 10px;
     border-style: none;
     border-bottom: 1px solid;

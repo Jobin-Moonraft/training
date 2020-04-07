@@ -13,13 +13,24 @@ summary, time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+.box {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: none; }
+
 .input {
-  display: none;
+  background-color: white;
   border: 1px solid;
-  margin: 15px 50px;
-  text-align: center;
   padding: 20px;
-  border-radius: 20px; }
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 label {
   font-weight: bold;
@@ -43,13 +54,6 @@ p {
   padding: 6px;
   font-size: 20px;
   background-color: rgba(3, 219, 252, 0.6); }
-
-.input {
-  display: none;
-  border: 1px solid;
-  margin: 15px 50px;
-  text-align: center;
-  padding: 20px; }
 
 .hidden {
   display: none; }
@@ -92,7 +96,6 @@ h3 {
 
 .text, .edit-input1, .edit-input2, .edit-input3 {
   width: 270px;
-  margin: 10px;
   padding: 10px;
   border-style: none;
   border-bottom: 1px solid;

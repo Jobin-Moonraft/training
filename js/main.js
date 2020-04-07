@@ -1,9 +1,14 @@
 function createTodo(){
-    document.getElementById("input").style.display = "inline-block";
+    document.getElementById("box").style.display = "inline-block";
 }
 function hideTodo(){
-    document.getElementById("input").style.display = "none";
+    document.getElementById("box").style.display = "none";
 }
+window.onclick = function(event) {
+    if (event.target == box) {
+      box.style.display = "none";
+    }
+  }
 
 
 function checkEmptyInput(){               
@@ -60,10 +65,11 @@ add_todo_btn.addEventListener('click', function(){
     var time = todo_time.value;  
     //priority section
     var Selected = document.querySelector('input[type= "radio"]:checked');
-    priority.innerText = Selected.value;
-    var todo_priority= document.createElement('DIV');
+    priority.innerText = Selected.value;    
+    var todo_priority= document.createElement('OPTION');
     todo_priority.classList.add('item-priority');
     todo_priority.textContent = Selected.value;
+      
 
     var item = document.createElement('DIV');
     item.classList.add('item');  
